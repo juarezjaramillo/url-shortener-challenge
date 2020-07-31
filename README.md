@@ -14,7 +14,7 @@ In the project directory, run:
 cd CodingChallengeBackend
 bundle install
 ruby bin/rails db:migrate RAILS_ENV=development
-ruby bin/rails rails server -b 0.0.0.0 -p 8080 -e development
+ruby bin/rails server -b 0.0.0.0 -p 8080 -e development
 ```
 
 This will install the dependencies and start a development server on [http://localhost:8080](http://localhost:8080)
