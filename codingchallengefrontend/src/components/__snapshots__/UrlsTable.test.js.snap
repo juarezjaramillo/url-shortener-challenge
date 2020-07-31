@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<table
+  className="urls-table"
+>
+  <thead>
+    <tr>
+      <th>
+        Url
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Shortened Url
+      </th>
+      <th>
+        Hits
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        https://www.google.com
+      </td>
+      <td>
+        Google Test
+      </td>
+      <td>
+        <a
+          className="App-link"
+          href="https://test-url.com/v/ab"
+        >
+          https://test-url.com/v/ab
+        </a>
+      </td>
+      <td>
+        2
+      </td>
+    </tr>
+    <tr>
+      <td>
+        https://www.google2.com
+      </td>
+      <td>
+        Google Test 2
+      </td>
+      <td>
+        <a
+          className="App-link"
+          href="https://test-url.com/v/ba"
+        >
+          https://test-url.com/v/ba
+        </a>
+      </td>
+      <td>
+        1
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

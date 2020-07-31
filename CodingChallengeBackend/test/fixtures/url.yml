@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  url: https://www.google.com
+  code: 1
+  hits: 1
+  title: Google
+
+two:
+  id: 2
+  url: https://www.ruby.com
+  code: 2
+  hits: 2
+  title: Some Ruby title
+
+three:
+  id: 3
+  url: https://www.ruby.com
+  code: 3
+  hits: 3
+  title: Some Ruby title 3
+
+four:
+  id: 4
+  url: https://www.ruby.com
+  code: 4
+  hits: 4
+  title: Some Ruby title 5

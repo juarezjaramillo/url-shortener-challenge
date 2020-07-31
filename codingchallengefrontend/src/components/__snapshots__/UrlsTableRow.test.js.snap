@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<tr>
+  <td>
+    https://www.google.com
+  </td>
+  <td>
+    Google Test
+  </td>
+  <td>
+    <a
+      className="App-link"
+      href="https://test-url.com/v/ab"
+    >
+      https://test-url.com/v/ab
+    </a>
+  </td>
+  <td>
+    2
+  </td>
+</tr>
+`;

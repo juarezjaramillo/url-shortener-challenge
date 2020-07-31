@@ -1,0 +1,9 @@
+.urls-table thead tr th:first-child,
+.urls-table tbody tr td:first-child {
+    width: 25%;
+    word-break: break-all;
+}
+
+.urls-table thead tr:first-child th {
+    border-bottom: 1px solid aliceblue;
+}
