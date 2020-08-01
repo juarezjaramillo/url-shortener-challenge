@@ -54,19 +54,21 @@ class UrlController < ApplicationController
     # we follow redirects in case no title is found (this is fine for this challenge)
     title = nil
     response = nil
-    url = "http://#{url}" unless url.nil? || url.empty? ||  url[%r{\Ahttp://}] || url[%r{\Ahttps://}]
+    url = "http://#{url}" unless url.nil? || url.empty? || url[%r{\Ahttp://}] || url[%r{\Ahttps://}]
 
     begin
       response = Net::HTTP.get_response(URI(url))
-      content = response.body.empty? ? '' : response.body
-      matches = content.match(%r{<title>(.*?)</title>}im)
-      unless matches.nil?
-        title = matches.captures.length.positive? ? matches.captures[0] : nil
-      end
       url = response['location'] # New url in case of redirection
     rescue StandardError
       title = '(Unknown)'
     end while response.is_a?(Net::HTTPRedirection)
+
+    unless response.body.empty?
+      matches = response.body.match(%r{<title>(.*?)</title>}im)
+      unless matches.nil?
+        title = matches.captures.length.positive? ? matches.captures[0] : nil
+      end
+    end
 
     title.nil? ? '(Unknown)' : title
   end
